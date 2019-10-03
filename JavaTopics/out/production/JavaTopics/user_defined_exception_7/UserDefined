@@ -1,0 +1,4 @@
+Sometimes, the built-in exceptions cannot accurately describe the situation. Due to this,
+Java allows users to create their own exceptions.
+=> This is done by extending the Exception class.
+    + Then we call the super class's constructor inside the constructor of our class

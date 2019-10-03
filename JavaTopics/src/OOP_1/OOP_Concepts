@@ -1,0 +1,45 @@
+Object-oriented programming (OOP) is a programming language model in which programs are
+organized around data, or objects, rather than functions and logic.
+1. Class: A class is a user defined blueprint or prototype from which objects are created.
+  It represents the set of properties or methods that are common to all objects of one type.
+2. Object: It is a basic unit of Object Oriented Programming and represents the real life entities.
+A typical Java program creates many objects, which as you know, interact by invoking methods.
+   + An object consists of :
+    - State : It is represented by attributes of an object. It also reflects the properties of an object.
+    - Behavior : It is represented by methods of an object. It also reflects the response of an object with other objects.
+    - Identity : It gives a unique name to an object and enables one object to interact with other objects.
+3. Polymorphism: the ability to have many forms
+   + Compile-time polymorphism: It is also known as static polymorphism. This type of
+     polymorphism is achieved by function overloading or operator overloading.
+        - Method overloading: having more than one methods with the same name but have
+        different functionality in a class
+        - operator overloading: giving more functionality to operators
+   + Runtime polymorphism: It is also known as Dynamic Method Dispatch. It is a process
+   in which a function call to the overridden method is resolved at Runtime. This type
+   of polymorphism is achieved by Method Overriding.
+        - Method overriding: giving new definition to the super class's method
+4. Inheritance: The ability of a class to inherit another class's properties and methods
+    + Super class: the class from which other classes inherit (parent)
+    + Sub class: the class which inherits from other class
+    + Types of inheritance:
+        - Single level inheritance: one super class and one sub class
+        - Multi level inheritance: a class inherit from a class which inherits from other classes
+        - Hierarchical inheritance: one super class and multiple sub classes
+        - Multiple inheritance: one sub class inherits from more than one super class (This is achieved through interface)
+5. Abstraction: Showing only import details. This is achieved using abstract classes and interface
+    + Abstract class: A class which contains abstract methods
+        - an abstract method is a method without body
+        - an abstract class does not necessarily have to contain abstract methods, meaning
+        methods can be abstract or none-abstract
+        - abstract classes cannot be instantiated
+    + Interface: referred to as "blue print" of a class
+        - all methods in interfaces are abstract by default
+        - interfaces are used to achieve total abstraction
+        - interfaces are used to achieve multiple inheritance
+6. Encapsulation: Wrapping up data into a single unit.
+    + this is done by making the properties in the class "private"
+    + we access these properties using "getter" and "setter".
+        - because these methods are member functions, they can access private properties
+7. Message passing: Communication between processes.
+    + Message passing in Java is like sending an object i.e. message from one thread to another thread.
+

@@ -1,0 +1,20 @@
+The File class is a class that contains methods for working with the path name, deleting
+and renaming files, creating new directories, listing contents of a directory and determining
+several attributes of file and directories.
+=> Java uses a concept called "Stream" to handle file input output operation
+    + Stream is a sequence of data
+        - Byte stream: mainly incorporates with byte data
+            -> when the input and out process happens with bytes
+        - Character stream: mainly incorporates with character data
+            -> when the input and output process happens with character
+=> important methods
+    + canRead(): tests whether the file is readable
+    + canWrite(): tests whether the file is writable
+    + createNewFile(): Creates an empty file
+    + Delete(): Deletes a file
+    + Exists(): Tests whether the file exists or not
+    + getName(): returns the name of the file
+    + getAbsolutePath(): returns the absolute path of the file
+    + Length(): returns the size of the file in bytes
+    + List(): returns the array of files in the directory
+    + Mkdir(): makes directory

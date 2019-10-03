@@ -1,0 +1,38 @@
+The java.util.Map interface represents a mapping between a key and a value. The Map interface is not a subtype of the Collection interface. Therefore it behaves a bit different from the rest of the collection types.
+=> Characteristics:
+    1. A Map cannot contain duplicate keys and each key can map to at most one value. Some implementations allow null key and null value like the HashMap and LinkedHashMap, but some do not like the TreeMap.
+    2. The order of a map depends on specific implementations, e.g TreeMap and LinkedHashMap have predictable order, while HashMap does not.
+    3. There are two interfaces for implementing Map in java: Map and SortedMap, and three classes: HashMap, TreeMap and LinkedHashMap.
+=> Methods:
+    + put(key,value): inserts a new pair
+    + putAll(map): inserts a map into another map
+    + remove(key): deletes a pair with the specified key
+    + get(key): returns the value of a pair with the specified key
+    + containsKey(key): searches for the specified key
+    + keySet():  return the Set view containing all the keys.
+    + entrySet():  return the Set view containing all the keys and values.
+=> Types:
+    + SortedMap:
+      - an interface in collection framework
+      - This interface extends Map inrerface and provides a total ordering of its elements (elements can be traversed in sorted order of keys).
+      - null key or null value are not permitted.
+      - The keys are sorted either by natural ordering or by a specified comparator.
+      - For the methods, visit https://www.geeksforgeeks.org/sortedmap-java-examples/
+    + HashMap:
+        - it uses a technique called Hashing, which is a technique of converting a large string into small string that represents the same thing
+        - HashMap extends an abstract class AbstractMap which also provides an incomplete implementation of Map interface.
+        - HashMap doesn’t allow duplicate keys but allows duplicate values. That means A single key can’t contain more than 1 value but more than 1 key can contain a single value.
+        - HashMap allows null key also but only once and multiple null values.
+        - This class makes no guarantees as to the order of the map; in particular, it does not guarantee that the order will remain constant over time. It is roughly similar to HashTable but is unsynchronized.
+        - It is an array of nodes in which each node contains four field, int hash, K key, V value, Node next
+
+    + TreeMap
+        - This class is a member of Java Collections Framework.
+        - The class implements Map interfaces including NavigableMap, SortedMap and extends AbstractMap
+        - The map is sorted according to the natural ordering of its keys, or by a Comparator provided at map creation time, depending on which constructor is used.
+    + LinkedHashMap
+        - LinkedHashMap is just like HashMap with an additional feature of maintaining an order of elements inserted into it.
+        - HashMap provided the advantage of quick insertion, search and deletion but it never maintained the track and order of insertion which the LinkedHashMap provides where the elements can be accessed in their insertion order.
+        - A LinkedHashMap contains values based on the key. It implements the Map interface and extends HashMap class.
+        - It contains only unique elements
+        - It may have one null key and multiple null values

@@ -1,0 +1,8 @@
+Like a class, an interface can have methods and variables, but the methods declared in
+interface are by default abstract (only method signature, no body).
+=> A class inherits interfaces through the "implements" keyword.
+=> an interface inherits other interfaces through the "extends" keyword
+=> Interfaces specify what a class must do and not how. It is the blueprint of the class.
+=> Interfaces support multiple inheritance
+=> any class that implements an interface must override all of its methods or be declared abstract
+=> It is used to achieve total abstraction

@@ -1,0 +1,11 @@
+A class is a blueprint from which objects are instantiated. It contains a collection of
+properties and methods
+=> constructor: used to instantiate objects.
+    + it is invoked every time an object is created
+    + it is a collection of statements because it is also a method
+    + the constructor of the parent class can be called from the child class using super()
+    => Types of constructors:
+        1. default constructor: a constructor with no parameter
+        2. parameterized constructor: a constructor with parameters or argument
+    + In inheritance, default constructor of the parent class is called automatically if it
+    contains no paramenter. Else, we must call it in the first line of the sub class's constructor

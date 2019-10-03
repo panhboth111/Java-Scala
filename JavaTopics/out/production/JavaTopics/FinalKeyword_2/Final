@@ -1,0 +1,5 @@
+We use final keyword to allow assignment only once.
+=> Final keyword can be used on:
+    1. variable
+    2. methods
+    3. class

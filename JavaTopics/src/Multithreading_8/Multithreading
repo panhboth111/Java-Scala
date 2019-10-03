@@ -1,0 +1,22 @@
+Multithreading is a Java feature that allows concurrent execution of two or more parts
+of a program for maximum utilization of CPU.
+=> A thread is an independent path of execution within a program.
+    + It is a lightweight sub-process, the smallest unit of processing
+=> Every Java program has at least one thread known as the main thread
+=> In order to achieve multithreading we can:
+    1. Extend the Thread class
+    2. Implementing the Runnable interface
+
+=> Thread class vs Runnable interface:
+    + If we extend the thread class, we will not be able to extend other classes.
+        - But, if we implement the Runnable interface, we will still be able to inherit
+        other base classes
+    + Extending the thread class means inheriting the basic in-build functionality of a
+    thread like yield(), interrupt() which are not available in Runnable
+
+=> Life cycle:
+    1. New:
+    2. Runnable:
+    3. Running
+    4. Waiting
+    5. Dead

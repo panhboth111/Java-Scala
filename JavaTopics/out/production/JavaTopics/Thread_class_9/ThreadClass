@@ -1,0 +1,23 @@
+By extending Thread class, we inherit many important methods into our class:
+=> start() and run()
+    + Invoking start() will cause the run() method to execute as a new thread
+=> isAlive():
+    + returns true if the thread is still running or has not been terminated
+=> join():
+    + allows one thread to wait until another thread completes its execution
+=> yield():
+    + moves the current thread from running to runnable to allow other threads to run.
+    + a better alternative is to use thread.sleep()
+=> interrupt(), isInterrupted() and interrupted():
+    + Due to the deprecation of stop(), these methods are used instead.
+    + interrupt():  If any thread is in sleeping or waiting state then using interrupt() method,
+    we can interrupt the execution of that thread by showing InterruptedException.
+        - This sets a flag.
+    + isInterrupted(): returns true if the interrupted flag has been set.
+    + interrupted(): tests the flag for the currently executing thread and if it has been interrupted,
+    it clears the interrupted flag in the current thread object and returns true.
+=> currentThread(): returns a reference to the thread in which it is called.
+=> sleep(): This static sleep() method causes the thread to suspend execution for a given time
+    - It has two overloaded version:
+        1. static void sleep (long milliseconds) throws InterruptedException
+        2. static void sleep (long milliseconds, int nanoseconds) throws InterruptedException

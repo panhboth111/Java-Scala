@@ -1,0 +1,19 @@
+=> Default exception handling: Whenever an exception occurs inside a method, an exception object
+containing name and description of the exception and the current state of the program is
+created and sent to the JVM. There might be the list of the methods that had been called
+to get to the method where exception was occurred. This ordered list of the methods is
+called Call Stack.Now the following procedure will happen.
+    1. The runtime searches the Call Stack to find exception handler
+    2. The runtime starts from the method in which the exception occurred and then proceeds
+    through the Call Stack in the reverse order
+    3. The exception will be passed to the exception handler with the correct type
+    4. If it can't find any appropriate handler, the runtime system will hand the exception
+    to default exception handler, which is part of the runtime system. It will print a
+    message and terminate the program
+=> Customized exception handling:
+    + Try: used to contain the code you expect to cause an exception
+    + Catch: used to catch and handle the exception passed by the try block
+    + Finally: not mandatory. This is the end of the try catch sequence and will always
+      execute.
+    + throw: used to explicitly throw an exception
+    + thows: used to indicate that a method might throw a certain exception

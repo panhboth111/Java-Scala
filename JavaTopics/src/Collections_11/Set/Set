@@ -1,0 +1,25 @@
+Set is an interface which extends Collection. It is an unordered collection of objects in which duplicate values cannot be stored
+=> Types of Set:
+    1. HashSet: Implements Set Interface.
+        + Underlying data structure for HashSet is hashtable.
+        + As it implements the Set Interface, duplicate values are not allowed.
+        + Objects that you insert in HashSet are not guaranteed to be inserted in same order. Objects
+        are inserted based on their hash code.
+        + NULL elements are allowed in HashSet
+    2. LinkedHashSet:
+        + implements the SortedSet interface so duplicate values are not allowed.
+        + Objects in a TreeSet are stored in a sorted and ascending order.
+        + TreeSet does not preserve the insertion order of elements but elements are sorted by keys.
+        + TreeSet does not allow to insert Heterogeneous objects. It will throw classCastException
+        at Runtime if trying to add hetrogeneous objects.
+    3. NavigableSet:NavigableSet represents a navigable set in Java Collection Framework.
+     The NavigableSet interface inherits from the SortedSet interface. It behaves like a
+     SortedSet with the exception that we have navigation methods available in addition
+     to the sorting mechanisms of the SortedSet. For example, NavigableSet interface can
+     navigate the set in reverse order compared to the order defined in SortedSet.
+=> Important methods:
+    + Union: achieved through addAll() method which adds all the element of a set to another
+    + Intersection: achieved through retainAll() which removes every element except the ones common
+    with the specified set
+    + Symmetric difference: achieved through removeAll() method which remove every element in the set
+    that exists inside the specified set

@@ -1,0 +1,12 @@
+A Collection is a group of individual objects represented as a single unit.
+=>Collection: Root interface with basic methods like add(), remove(),
+              contains(), isEmpty(), addAll(), ... etc.
+=>Set: Does not allow duplicates
+=>List: Can contain duplicates and elements are ordered
+=>Queue: Typically order elements in FIFO order except exceptions
+         like PriorityQueue.
+=> Deque : Elements can be inserted and removed at both ends. Allows
+           both LIFO and FIFO.
+=> Map : Contains Key value pairs. Doesn't allow duplicates.  Example
+      implementation are HashMap and TreeMap.
+      TreeMap implements SortedMap.

@@ -1,0 +1,34 @@
+The Java.util.List is a child interface of Collection
+=> it is an ordered collection of objects in which duplicate values can be stored.
+=> Since List preserves the insertion order, it allows positional access and insertion of elements
+=> List Interface is implemented by ArrayList, LinkedList, Vector and Stack classes.
+=> Methods
+    + add(index,element): used to insert a new element into a specific position
+    + addAll(index,collection): used to add all the element of a collection to list
+    + remove(index): used to remove an element from the specified index
+    + get(index): returns the element at the specified index
+    + set(index,element): used to replace an element at the specified index with a new element
+    + indexOf(element): returns the index of the first occurrence of the specified element
+        - returns -1 if the element does not exist
+    + lastIndexOf(element): returns the index of the last occurrence of the specified element
+        - returns -1 if the element does not exist
+=> Types:
+    1. ArrayList: It provides us dynamic arrays in Java. Though, it may be slower than
+    standard arrays but can be helpful in programs where lots of manipulation in the
+    array is needed.
+        + ArrayList inherits AbstractList class and implements List interface
+        + ArrayList is initialized by a size, however the size can increase if collection grows or shrinks if objects
+        are removed from the collection.
+        + ArrayList can not be used for primitive types, like int, char, etc. We need a wrapper class for such cases (see this for details).
+    2. LinkedList: linear data structures where the elements are not stored in contiguous locations and every element is a separate object
+    with a data part and address part.
+        + The elements are linked using pointers and addresses
+        + Each element is known as a node.
+        + Due to the dynamicity and ease of insertions and deletions, they are preferred over the arrays.
+        + It also has few disadvantages like the nodes cannot be accessed directly instead we need to start from the head and follow through
+        the link to reach to a node we wish to access.
+    3.The Vector class implements a growable array of objects. Vectors basically falls in legacy classes but now it is fully compatible with collections.
+        + Vector implements a dynamic array that means it can grow or shrink as required. Like an array, it contains components that can be accessed using an integer index
+        + They are very similar to ArrayList but Vector is synchronised and have some legacy method which collection framework does not contain.
+        + It extends AbstractList and implements List interfaces.
+
