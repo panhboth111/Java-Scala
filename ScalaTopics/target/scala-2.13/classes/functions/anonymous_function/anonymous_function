@@ -1,0 +1,3 @@
+An anonymous function is a function that does not have a name
+=> It provides a lightweight function definition
+=> It is useful when we want to create an inline function

@@ -1,0 +1,3 @@
+trait is like a java interface but it is more powerful because you are allowed to implement
+members.
+trait mixins is how we can inherit any number of classes or traits or abstract classes

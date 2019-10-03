@@ -1,0 +1,4 @@
+In programming languages, loops are used when you want to execute a block of code repeatedly
+=> for loops: preferred when you're aware of the number of execution time that is going to occur
+=> while loops: preferred when you're not aware of the number of execution time
+=> do while: preferred when you want the loop to execute at least once

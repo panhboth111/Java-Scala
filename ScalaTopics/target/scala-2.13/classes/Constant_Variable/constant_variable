@@ -1,0 +1,8 @@
+A variable is a named memory location in which we store values.
+=> Data types:
+    + It is not necessary to specify the data types of variable in Scala
+=> variables can be categorized into two types:
+    + mutable: its value can be reassigned throughout the program
+        - it is declared using "var" keyword
+    + immutable: its value can only be assigned once.
+        - it is declared using "val" keyword

@@ -1,0 +1,16 @@
+A function is a collection of statements that perform a certain task.
+=> we use function because it divides the work load and increase reusability.
+=> Method: function inside a class
+
+=> Declaration:
+    + def keyword
+    + function name:
+        - in Scala, function name can have characters like +,~,&,-,++,\,/ etc
+    + parameter list
+    + return type:
+        - the return types of the parameters is required while the return type of the function itself
+        is optional
+    + =:
+        - if the user uses this, the function will return the desired value.
+        - if not, it will not return any value and will work as a subroutine
+    + method body

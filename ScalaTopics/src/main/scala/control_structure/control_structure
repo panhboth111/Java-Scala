@@ -1,0 +1,13 @@
+A control structure is a block of programming that analyzes variables and selects
+how to proceed based on given parameters. It is the basic decision-making process
+in computing that determines the program flow based on certain conditions and parameters.
+=> if..else
+=> match expression
+=> loops
+    + for loop
+    + while loop
+    + do while
+=> jumping
+    + break: to force the loop to break immediately
+    + continue: to force the next iteration of the loop to take place
+    + return: get out of the nearest enclosing function or {}

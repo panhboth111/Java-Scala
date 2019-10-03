@@ -1,0 +1,27 @@
+A class is a blueprint from which objects are created.
+=> it is also referred to as a collection of methods and properties
+
+An object is an actual instance of the class
+=> it consists of:
+    + state : It is represented by attributes of an object. It also reflects the properties of an object.
+    + behaviour :  It is represented by methods of an object. It also reflects the response of an object with other objects.
+    + Identity : It gives a unique name to an object and enables one object to interact with other objects.
+=> Singleton object:
+Because there is no "static" keyword in Scala, In order to achieve class-level functionality,
+the concept of "singleton object" was introduced.
+    + A Singleton object is an object which defines a single object of a class
+    + You can create these types of objects directly without explicitly creating a class
+    + A singleton object provides an entry point to your program execution.
+    + If you do not create a singleton object in your program, then your code compile successfully but does not give output.
+    + Important points:
+        - The method in the singleton object is globally accessible.
+        - You are not allowed to create an instance of singleton object.
+        - You are not allowed to pass parameter in the primary constructor of singleton object.
+        - In Scala, a singleton object can extend class and traits.
+        - In Scala, a main method is always present in singleton object.
+        - The method in the singleton object is accessed with the name of the
+        object(just like calling static method in Java), so there is no need to create
+        an object to access this method.
+=> companion is known as an object whose name is same as the name of the class.
+    + A companion object is defined in the same source file in which the class is defined.
+    + A companion object is allowed to access both private methods and private fields of the class.

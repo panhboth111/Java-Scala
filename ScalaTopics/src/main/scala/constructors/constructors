@@ -1,0 +1,35 @@
+Constructor is a class's method which is always invoked when an object is instantiated from
+that class.
+=> Primary constructor: When the class has only one constructor, that constructor is called
+the primary constructor
+    + it shares the same body as the class
+    + The primary constructor may contain zero or more parameters
+    + If we do not create a constructor in our Scala program, then the compiler will
+    automatically create a primary constructor when we create an object of your class,
+    this constructor is known as a default primary constructor. It does not contain any
+    parameter.
+    + If the parameters in the constructor parameter-list are declared using var, then
+    the value of the fields may change. And Scala also generates getter and setter
+    methods for that field.
+    + If the parameters in the constructor parameter-list are declared using val, then
+    the value of the fields cannot change. And Scala also generates a getter method for
+    that field.
+    + If the parameters in the constructor parameter-list are declared without using val
+    or var, then the visibility of the field is very restricted. And Scala does not
+    generate any getter and setter methods for that field.
+    + If the parameters in the constructor parameter-list are declared using private val
+    or var, then it prevents from generating any getter and setter methods for that field.
+    So, these fields can be accessed by the members of that class.
+    + In Scala, only a primary constructor is allowed to invoke a superclass constructor.
+    + In Scala, we are allowed to make a primary constructor private by using a private
+    keyword in between the class name and the constructor parameter-list.
+=> Auxiliary constructor: The constructors other than the primary constructor
+    + In a single program, we are allowed to create multiple auxiliary constructors,
+    but they have different signatures or parameter-lists.
+    + Every auxiliary constructor must call one of the previously defined constructors.
+    + The first statement of the auxiliary constructor must contain the constructor call using this.
+=> when a class is inherited, the sub class must call the one of the super class constructors.
+    + If the sub class does not explicitly call the super class constructor, the default
+    constructor of the super class will be called by default
+    + If the super class does not contain any default constructor, and the child class does not
+    pass any argument into the super class constructor call, errors with occur.

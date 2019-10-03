@@ -1,0 +1,4 @@
+The If..Else conditional expression is a classic programming construct for choosing a
+branch of code based on whether an expression resolves to true or false. In many languages
+it starts with an “if,” continues with zero to many “else if ” sections, and ends with a
+final “else” catch-all statement.

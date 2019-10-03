@@ -1,0 +1,6 @@
+A list is a collection which contains immutable data. List represents linked list in
+Scala. The Scala List class holds a sequenced, linear list of items.
+    + In a Scala list, each element must be of the same type.
+    + The implementation of lists uses mutable state internally during construction.
+    + In Scala, list is defined under scala.collection.immutable package.
+    + A List has various methods to add, prepend, max, min, etc. to enhance the usage of list.

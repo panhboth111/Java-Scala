@@ -1,0 +1,10 @@
+Function composition is a way in which a function is mixed with other functions. During
+the composition the one function holds the reference to another function in order to
+fulfill it’s mission.
+=> compose: works with val functions
+    + the later function works first with the parameter passed and then passes the return
+    value to the previous function
+=> andThen: works with val function
+    + the first function works first with the parameter passed and then passes the return
+    value to the next function
+=> passing function as arguments

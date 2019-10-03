@@ -1,0 +1,3 @@
+Currying in Scala is simply a technique or a process of transforming a function.
+This function takes multiple arguments into a function that takes single argument.
+It is applied widely in multiple functional languages.

@@ -1,0 +1,7 @@
+function overloading happens when we have more than one method with the same name in a class.
+=> to achieve this, methods need to:
+    + have different number of parameters
+    or
+    + have parameters of different data type
+    or
+    + have parameters of different order

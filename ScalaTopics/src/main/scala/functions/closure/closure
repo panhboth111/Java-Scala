@@ -1,0 +1,7 @@
+Closures functions are functions that use variables that are not declared inside the functions.
+    + The return value of these functions are dependant uppon these variables
+=> Closures function are categorized into two types:
+    + pure: when the free variable is declared via "val" so its value cannot change throughout
+    the program
+    + impure: when the free variable is declared via "var" so its value is subject to change thus leads
+    to different values

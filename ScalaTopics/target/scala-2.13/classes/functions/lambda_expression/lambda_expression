@@ -1,0 +1,4 @@
+Lambda expression is a type of expression in which anonymous function is used instead of
+variable or value.
+=> Lambda expressions are faster and more expressive than a whole function
+=> They are more convenient when we have a simple function to be used in one place

@@ -1,0 +1,4 @@
+Array is a special kind of collection in scala.
++ it is a fixed size data structure that stores elements of the same data type.
++ The index of the first element of an array is zero and the last element is the total number of elements minus one
++ It is a collection of mutable values
